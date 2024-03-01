@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<body>
+    <h1>Forms</h1>
+    <form action="/tacos">
+        <p>
+            <label for="Username">Enter Username</label>
+            <input id="Username" type="text" placeholder="Username" name="Username">
+        </p>
+        <p>
+            <label for="password">Enter Password</label>
+            <input id="password" type="password" placeholder="Password" name="password">
+        </p>
+        <p>
+            <label for="color">Choose a color</label>
+            <input id="color" type="color">
+        </p>
+        <p>
+            <label for="number">Enter Number</label>
+            <input id="number" type="number" placeholder="Enter Number">
+        </p>
+        <button>Submit</button>
+    </form>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">
+        <button>Search Google</button>
+    </form>
+    <h2>More Inputs</h2>
+    <form action="/birds">
+        <input type="checkbox" name="agree_tos" id="agree">
+        <label for="agree">I agree to everything</label>
+        <button>Submit</button>
+        <p>
+            <label for="S">S</label>
+            <input type="radio" name="size" id="S" value="S">
+            <label for="M">M</label>
+            <input type="radio" name="size" id="M" value="M">
+            <label for="L">L</label>
+            <input type="radio" name="size" id="L" value="L">
+        </p>
+        <p>
+            <label for="meal">Please select an option</label>
+            <select name="meal" id="meal">
+                <option value="">Select option</option>
+                <option value="Vegetarian">Vegetarian</option>
+                <option value="Non-Vegetarian">Non-Vegetarian</option>
+            </select>
+        </p>
+        <p>
+            <label for="Cheese">Amount of Cheese</label>
+            <input type="range" name="Cheese" id="Cheese" min="1" max="10">
+        </p>
+        <p>
+            <label for="request">Special request</label>
+            <br>
+            <textarea name="request" id="" cols="25" rows="10"></textarea>
+        </p>
+        <button>Submit</button>
+    </form>
+    <h2>Validation Demo</h2>
+    <form action="/dummy">
+        <label for="first">Enter First Name</label>
+        <input type="text" name="first" id="first" required>
+        <p>
+            <label for="username">Username</label>
+            <input type="text" name="Username" id="username" minlength="5" maxlength="15">
+        </p>
+        <p>
+            <label for="email">Email</label>
+            <input type="email" name="Email" id="email">
+        </p>
+        <button>Submit</button>
+    </form>
+</body>
+</head>
+
+</html>
